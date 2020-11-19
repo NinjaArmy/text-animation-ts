@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Text-animation></Text-animation>
     </div>
     <router-view />
   </div>
@@ -30,3 +29,11 @@
   }
 }
 </style>
+<script>
+import Vue from "vue";
+import { Component } from "vue-class-component";
+import TextAnimation from "@/components/TextAnimation";
+export default {
+  components: { TextAnimation }
+};
+</script>
